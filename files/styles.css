@@ -7,7 +7,7 @@ body{
 .whole{
     width: 100em;
     background-color: #E2E8CE;
-    height: 100em;
+    height: 120em;
     margin: 2em 0;
     border-radius: 1em;
     overflow: hidden;
@@ -34,6 +34,7 @@ header{
     font-size: 3em;
     color: #EB5A47;
     margin: 1em .3em;
+    padding-top: 10.8px;
 }
 .media:hover{
     transform: scale(1.3);
@@ -78,4 +79,46 @@ header{
 .navLink:hover{
     color: #F08475;
     background-color: #0B5574;
+}
+main{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr) repeat(1, 3fr);
+    padding: .5em;
+}
+.about{
+    width: 45em;
+    margin: 2em auto 0 auto;
+    font-size: 1.4em;
+}
+.about h1{
+    font-family: 'Roboto Serif';
+}
+.about p{
+    font-family: 'Poppins';
+}
+.listOfExamples{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2em;
+    grid-row-gap: 3em;
+}
+.example{
+    display: block;
+    width: 25em;
+    margin: auto;
+    background-color: #646F4B;
+    border: 3px solid #0B4F6C;
+    border-radius: 1em;
+    overflow: hidden;
+}
+.preview{
+    width: 100%;
+    height: 30em;
+    border: none;
+}
+center{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Serif';
+    font-size: 1.3em;
 }
