@@ -7,7 +7,7 @@ body{
 .whole{
     width: 1550px;
     background-color: #EFF2E3;
-    min-height: 150em;
+    min-height: 70em;
     margin: 2em 0;
     border-radius: 1em;
     overflow: hidden;
@@ -63,7 +63,7 @@ header{
     text-decoration: none;
     color: #CAB9BD;
     font-size: 1.5em;
-    border: 1px solid ;
+    border: 1px solid;
     border-radius: .2em;
     padding: .3em;
     background-color: #8F0013;
@@ -86,8 +86,28 @@ main{
     padding: .5em;
 }
 .posts{
-    display: grid;
     grid-template-rows: repeat(1, 1fr);
+}
+.upload{
+    display: grid;
+    grid-template-rows: repeat(1, 4fr) repeat(1, 1fr);
+    align-items: center;
+}
+.upload a{
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    color: #CAB9BD;
+    background-color: #8F0013;
+    margin: auto;
+    padding: .3em;
+    border: 1px solid;
+    border-radius: .2em;
+}
+.upload a:hover{
+    transform: scale(1.2);
+    color: #D3C5C8;
+    background-color: #A30016;
 }
 .about{
     width: 45em;
@@ -96,6 +116,9 @@ main{
 }
 .about h1{
     font-family: 'Roboto Serif';
+}
+.about h2{
+    font-family: 'Roboto Serif'
 }
 .about p{
     font-family: 'Poppins';
@@ -184,7 +207,4 @@ center{
         padding: 1em 0;
         grid-row-gap: 1em;
     }
-}
-@media only screen and (max-width: 900px){
-
 }
