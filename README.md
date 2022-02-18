@@ -4,6 +4,6 @@ Website showing literature work of students of GJK
 read page <br/>
 finish description <br/>
 favicon<br/>
-upload to server <br/>
+server <br/>
 better upload <br/>
 filter posts <br/>
