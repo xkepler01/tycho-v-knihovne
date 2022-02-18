@@ -30,13 +30,23 @@ header{
     border: 9px solid #8F0013;
     margin-right: 3em;
 }
-.media{
+.insta{
     font-size: 3em;
     color: #CAB9BD;
     margin: 1em .3em;
     padding-top: 10.8px;
 }
-.media:hover{
+.gith{
+    font-size: 3em;
+    color: #CAB9BD;
+    margin: 1em .3em;
+    padding-top: 10.8px;
+}
+.insta:hover{
+    transform: scale(1.3);
+    color: #D3C5C8;
+}
+.gith:hover{
     transform: scale(1.3);
     color: #D3C5C8;
 }
@@ -194,8 +204,7 @@ center{
     }
     .navigation{
         flex: 100%;
-        margin-bottom: 2em;
-        margin-top: 1em;
+        margin: 1em 5em 2em 18em;
     }
     .about{
         width: 30em;
@@ -204,6 +213,48 @@ center{
     .listOfExamples{
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-evenly;
+        padding: 1em 0;
+        grid-row-gap: 1em;
+    }
+}
+@media only screen and (max-width: 900px){
+    .whole{
+        width: 450px;
+        justify-content: center;
+    }
+    header{
+        justify-content: center;
+    }
+    .info{
+        margin: 0;
+    }
+    .logo{
+        order: 1;
+    }
+    .gith{
+        order: 2;
+    }
+    .title{
+        font-size: 3.5em;
+        margin-bottom: .5em;
+    }
+    .navigation{
+        flex: 100%;
+        margin: 0;
+        padding-bottom: 1em;
+    }
+    .navLink{
+        font-size: 1.2em;
+    }
+    main{
+        grid-template-rows: repeat(1, 1fr) repeat(1, 10fr);
+    }
+    .about{
+        width: 15em;
+        font-size: 1.2em;
+    }
+    .listOfExamples{
+        grid-template-columns: repeat(1, 1fr);
         padding: 1em 0;
         grid-row-gap: 1em;
     }
