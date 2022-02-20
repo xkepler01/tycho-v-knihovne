@@ -23,17 +23,38 @@
             <li><a href="upload.html" class="navLink">Přidat</a></li>
         </ul>
     </header>
-    <main class="upload">
-        <div class="about">
-            <h1>Návod</h1>
-            <h5>Pro nahrání příspěvku nám pošlete e-mail na adresu example@example.com ve tvaru:</h5>
-            <p>Jméno Příjmení Třída</p>
-            <p>Datum vytvoření textu</p>
-            <p>Popis(max 200 znaků)</p>
-            <p>Soubor ve formátu PDF</p>
-        </div>
-        <a href="mailto:example@example.com">example@example.com</a>
-    </main>
+    <form action="insert.php" method="post">
+        <main class="upload">
+            <div class="about">
+                <h1>Nahrat prispevek</h1>
+                <p>
+                    <label for="Name">Jméno a Příjmení:</label>
+                    <input type="text" name="name" id="Name" required class="uploadText">
+                </p>
+                <p>
+                    <label for="Class">Třída:</label>
+                    <input type="text" name="class" id="Class" required class="uploadText">
+                </p>
+                <p>
+                    <label for="Date">Datum vytvoření textu:</label>
+                    <input type="date" name="date" id="Date" required class="uploadText">
+                </p>
+                <p>
+                    <label for="Description">Popis(max 200 znaků):</label>
+                    <textarea name="description" id="Description" rows="8" cols="40" maxlength="200" required class="uploadText"></textarea>
+                </p>
+                <p>
+                    <label for="Type">Typ(Literatura/Obraz/Hudba):</label>
+                    <input type="text" name="type" id="Type" required class="uploadText">
+                </p>
+                <p>
+                    <label for="PDF">Soubor ve formátu PDF:
+                    <input type="file" name="pdf" id="PDF" accept="application/pdf" required class="uploadPDF">
+                </p>
+            </div>
+            <input type="submit" value="Odeslat" class="uploadButton">
+        </main>
+    </form>
 </div>
 </body>
 </html>

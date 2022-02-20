@@ -103,7 +103,7 @@ main{
     grid-template-rows: repeat(1, 4fr) repeat(1, 1fr);
     align-items: center;
 }
-.upload a{
+.uploadButton{
     text-align: center;
     font-size: 2em;
     text-decoration: none;
@@ -114,10 +114,21 @@ main{
     border: 1px solid;
     border-radius: .2em;
 }
-.upload a:hover{
+.uploadButton:hover{
     transform: scale(1.2);
     color: #D3C5C8;
     background-color: #A30016;
+}
+.uploadText{
+    display: flex;
+    background-color: #CAB9BD;
+    border: none;
+    border-radius: .5em;
+    font-size: 1.1em;
+    padding: .3em;
+}
+.uploadPDF{
+    font-size: 1.1em;
 }
 .about{
     width: 45em;
