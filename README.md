@@ -6,3 +6,4 @@ favicon<br/>
 server <br/>
 better upload <br/>
 filter posts <br/>
+special tags<br/>
